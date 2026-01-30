@@ -34,10 +34,10 @@ export default function Impact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { value: 500, suffix: '+', label: 'Farmers Trained', icon: '👨‍🌾' },
-    { value: 2500, suffix: '+', label: 'Acres Restored', icon: '🌱' },
-    { value: 150, suffix: '+', label: 'Tons Waste Recycled', icon: '♻️' },
-    { value: 75, suffix: '+', label: 'Communities Served', icon: '🏘️' }
+    { value: 60, suffix: '+', label: 'Farmers Reached', icon: '👨‍🌾' },
+    { value: 3, suffix: '', label: 'Communities in Beachhead Zone', icon: '🏘️' },
+    { value: 5, suffix: '', label: 'Compost Ambassadors in Training', icon: '🌱' },
+    { value: 2, suffix: '', label: 'Active Projects', icon: '♻️' }
   ];
 
   return (

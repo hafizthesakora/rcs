@@ -21,7 +21,8 @@ export default function Navigation() {
   const menuItems = [
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
-    { label: 'Our Work', href: '#work' },
+    { label: 'Team', href: '#team' },
+    { label: 'Projects', href: '#projects' },
     { label: 'Impact', href: '#impact' },
     { label: 'Contact', href: '#contact' },
   ];

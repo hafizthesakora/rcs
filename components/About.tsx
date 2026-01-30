@@ -70,8 +70,8 @@ export default function About() {
                       <FaUsers className="w-6 h-6" />
                     </div>
                   </div>
-                  <div className="text-4xl md:text-5xl font-extrabold text-primary mb-3 group-hover:scale-110 transition-transform duration-300">500+</div>
-                  <div className="text-base md:text-lg text-gray-700 font-semibold">Farmers Trained</div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-primary mb-3 group-hover:scale-110 transition-transform duration-300">60+</div>
+                  <div className="text-base md:text-lg text-gray-700 font-semibold">Farmers Reached</div>
                 </div>
               </motion.div>
               <motion.div
@@ -85,7 +85,7 @@ export default function About() {
                       <FaMapMarkerAlt className="w-6 h-6" />
                     </div>
                   </div>
-                  <div className="text-4xl md:text-5xl font-extrabold text-primary mb-3 group-hover:scale-110 transition-transform duration-300">75+</div>
+                  <div className="text-4xl md:text-5xl font-extrabold text-primary mb-3 group-hover:scale-110 transition-transform duration-300">3</div>
                   <div className="text-base md:text-lg text-gray-700 font-semibold">Communities</div>
                 </div>
               </motion.div>

@@ -1,6 +1,8 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Team from '@/components/Team';
+import Projects from '@/components/Projects';
 import Work from '@/components/Work';
 import Impact from '@/components/Impact';
 import Contact from '@/components/Contact';
@@ -12,6 +14,8 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Team />
+      <Projects />
       <Work />
       <Impact />
       <Contact />
