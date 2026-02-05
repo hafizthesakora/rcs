@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Video from '@/components/Video';
 import Team from '@/components/Team';
 import Projects from '@/components/Projects';
 import Work from '@/components/Work';
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Video />
       <Team />
       <Projects />
       <Work />

@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaPaperPlane } from 'react-icons/fa';
 
 export default function Contact() {
   const ref = useRef(null);
@@ -40,20 +40,13 @@ export default function Contact() {
     {
       icon: <FaEnvelope className="w-6 h-6" />,
       title: 'Email',
-      content: 'info@ruralclimatesolutions.org',
+      content: 'rcsclimate@outlook.com',
     },
     {
       icon: <FaPhone className="w-6 h-6" />,
       title: 'Phone',
-      content: '+233 XX XXX XXXX',
+      content: '+1 (514) 574-4172',
     }
-  ];
-
-  const socialLinks = [
-    { icon: <FaFacebook className="w-5 h-5" />, href: '#', label: 'Facebook', color: 'hover:bg-blue-600' },
-    { icon: <FaTwitter className="w-5 h-5" />, href: '#', label: 'Twitter', color: 'hover:bg-sky-500' },
-    { icon: <FaInstagram className="w-5 h-5" />, href: '#', label: 'Instagram', color: 'hover:bg-pink-600' },
-    { icon: <FaLinkedin className="w-5 h-5" />, href: '#', label: 'LinkedIn', color: 'hover:bg-blue-700' }
   ];
 
   return (
@@ -117,25 +110,6 @@ export default function Contact() {
               ))}
             </div>
 
-            <div>
-              <h4 className="font-bold text-gray-700 mb-6 text-lg md:text-xl">Follow Us</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.href}
-                    aria-label={social.label}
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                    transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
-                  >
-                    <div className={`w-12 h-12 bg-gradient-to-br from-[#2d5016] to-[#4a7c2e] text-white rounded-xl flex items-center justify-center ${social.color} transition-all duration-300 transform hover:scale-110 shadow-lg`}>
-                      {social.icon}
-                    </div>
-                  </motion.a>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           {/* Contact Form */}

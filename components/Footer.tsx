@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaHeart, FaPaperPlane, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaHeart, FaPaperPlane } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function Footer() {
@@ -17,13 +17,6 @@ export default function Footer() {
       setEmail('');
     }, 3000);
   };
-
-  const socialLinks = [
-    { icon: <FaFacebook className="w-5 h-5" />, href: '#', label: 'Facebook' },
-    { icon: <FaTwitter className="w-5 h-5" />, href: '#', label: 'Twitter' },
-    { icon: <FaInstagram className="w-5 h-5" />, href: '#', label: 'Instagram' },
-    { icon: <FaLinkedin className="w-5 h-5" />, href: '#', label: 'LinkedIn' }
-  ];
 
   return (
     <>
@@ -46,21 +39,9 @@ export default function Footer() {
                   <span className="text-xs text-gray-400">RCS</span>
                 </div>
               </Link>
-              <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-6">
+              <p className="text-gray-400 text-base md:text-lg leading-relaxed">
                 Empowering local farmers through regenerative agriculture and waste-to-resource innovation.
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="w-11 h-11 bg-white/10 hover:bg-gradient-to-br hover:from-[#2d5016] hover:to-[#4a7c2e] text-white rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110"
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
             </div>
 
             {/* Quick Links */}
